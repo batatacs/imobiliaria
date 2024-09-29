@@ -131,69 +131,640 @@
     <!--==============================
 	Hero Area
 	==============================-->
-    <section>
-        <div class="vs-carousel" data-fade="true">
-            <div>
-                <div class="hero-layout1" data-bg-src="/assets/img/bg/hero-bg.jpg">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-lg-12 col-xl-11">
-                                <div class="hero-content">
-                                    <h1 class="hero-title text-white">Encontre o lugar perfeito.</h1>
+    <div class="breadcumb-wrapper " data-bg-src="/assets/img/breadcrumb/breadcrumb-1-2.jpg">
+        <div class="container z-index-common"><!DOCTYPE html>
+            <html lang="pt-BR">
+            
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <title>Imobiliaria</title>
+                <link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"  rel="stylesheet">
+                <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+                <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+                <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+                <link rel="stylesheet" href="/assets/css/slick.min.css">
+                <link rel="stylesheet" href="/assets/css/style.css">
+            </head>
+            
+            <body>
+                <!--==============================
+                Mobile Menu
+                ============================== -->
+                <div class="vs-menu-wrapper">
+                    <div class="vs-menu-area text-center">
+                        <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+                        <div class="mobile-logo">
+                            <a href="/index.html"><img src="/assets/img/logo.png" alt="Energiso"></a>
+                        </div>
+                        <div class="vs-mobile-menu">
+                            <ul>
+                                <li><a href="/index.html">Inicio</a></li>
+                                <li><a href="/about.html">Sobre nós</a></li>
+                                <li><a href="#">Propriedades</a></li>
+                                <li><a href="/contact.html">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==============================
+                Preloader
+                ==============================-->
+                <div class="preloader">
+                    <button class="vs-btn preloaderCls">Cancelar Carregamento </button>
+                    <div class="preloader-inner">
+                        <img src="assets/img/logo.png" alt="">
+                        <span class="loader"></span>
+                    </div>
+                </div>
+                <!--==============================
+                Header Area
+                ==============================-->
+                <header class="vs-header header-layout2">
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="row justify-content-xl-between justify-content-md-center align-items-center gx-50">
+                                <div class="col d-none d-xl-block">
+                                    <div class="header-links">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="far fa-clock clock-icon"></i> Segunda a Sexta: 09:00 as 18:00
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fas fa-map-marker"></i> José Bonifácio n° 123, centro Santa
+                                                    rita do Passa Quatro </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="hero-bottom d-none d-lg-block">
-                                    <form class="search-form form-style1" id="searchForm">
-                                        <div class="form-top">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="type"
-                                                    id="radioComprar" value="Comprar" checked>
-                                                <label class="form-check-label" for="radioComprar">Comprar</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="type"
-                                                    id="radioAlugar" value="Alugar">
-                                                <label class="form-check-label" for="radioAlugar">Alugar</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-bottom">
-                                            <div class="row align-items-center gx-3 gx-lg-0 gy-3">
-                                                <div class="form-group col-md-6 col-lg">
-                                                    <select class="form-select" id="searchKeyword">
-                                                        <option value="" hidden>O que você procura?</option>
-                                                        <option value="casa">Casa</option>
-                                                        <option value="apartamento">Apartamento</option>
-                                                        <option value="terreno">Terreno</option>
-                                                        <option value="comercial">Imóvel Comercial</option>
-                                                        <option value="rural">Propriedade Rural</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md col-lg">
-                                                    <select class="form-select" id="city">
-                                                        <option value="" hidden>Encontrar cidade</option>
-                                                        <option value="santa-rita-do-passa-quatro">Santa Rita do Passa
-                                                            Quatro</option>
-                                                        <option value="porto-ferreira">Porto Ferreira</option>
-                                                        <option value="ribeirao-preto">Ribeirão Preto</option>
-                                                        <option value="campinas">Campinas</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button class="vs-btn style2" type="submit">Pesquise agora</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div id="errorMessage" class="error-message mt-3"></div>
-                                    <div id="searchResults" class="mt-4 row"></div>
+                                <div class="col-md-auto text-center">
+                                    <div class="social-media">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="sticky-wrapper">
+                        <div class="sticky-active">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="vs-logo">
+                                            <a href="/index.html"><img src="/assets/img/logo2.png" alt="logo"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col header-middle">
+                                        <div class="row gx-50 align-items-center ">
+                                            <div class="col">
+                                                <nav class="main-menu menu-style2 d-none d-lg-block">
+                                                    <ul>
+                                                        <li class="children">
+                                                            <a href="/index.html">Início</a>
+                                                        </li>
+                                                        <li class="menu-item-has-children">
+                                                            <a href="/properties.html">Propriedades</a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="/properties.html">Lista de Propriedades</a></li>
+                                                                <li><a href="/properties-details.html">Detalhes das Propriedades</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="/about.html">Sobre Nós</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/contact.html">Contato</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto d-none d-xl-block">
+                                        <div class="header-btns">
+                                            <a href="/contact.html" class="vs-btn style2">Entre em Contato</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto"></div>
+                                    <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </header>
+                <!--==============================
+                Hero Area
+                ==============================-->
+                <div class="breadcumb-wrapper " data-bg-src="/assets/img/breadcrumb/breadcrumb-1-2.jpg">
+                    <div class="container z-index-common">
+                        <div class="breadcumb-content">
+                            <div>
+                                <img src="/assets/img/breadcrumb/breadcrumb-1-2.png" alt="logo">
+                                <h1 class="breadcumb-title">Casa para Alugar</h1>
+                            </div>
+                            <div class="breadcumb-menu-wrap">
+                                <ul class="breadcumb-menu">
+                                    <li><a href="/index.html">Início</a></li>
+                                    <li><a href="/contact.html">Contate-nos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--==============================
+                properties List Area
+                ==============================-->
+                <section class="space bg-theme2">
+                    <div class="container">
+                        <h2 class="propertie-title">Disponível para Venda</h2>
+                        <div id="property-list">
+                            <div class="property-item">
+                                <div class="row align-items-xl-end align-items-lg-start g-5">
+                                    <div class="col-auto col-md-12 col-lg-5">
+                                        <div class="list-img mega-hover">
+                                            <img src="/assets/img/properties/1.png" alt="/properties-list">
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-12 col-lg-7">
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-auto">
+                                                <h3 class="text-capitalize h5 mb-40"><a href="/properties-details.html">Homes Golden
+                                                        River</a>
+                                                </h3>
+                                            </div>
+                                            <div class="col-auto text-end">
+                                                <p class="h5 font-body fw-medium mb-0">USD $55000</p>
+                                                <span class="fs-xxs text-uppercase fw-medium">buying price</span>
+                                            </div>
+                                        </div>
+                                        <div class="propertie-meta3 mb-30">
+                                            <span><img src="/assets/img/properties/properties_meta-1-1.svg" alt="icon"> 3
+                                                Quarto</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-2.svg" alt="icon"> 2
+                                                Banheiro</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-3.svg" alt="icon"> 235 Sq
+                                                ft</span>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h3 class="h6 text-capitalize font-title  fw-semibold mb-0">Some info</h3>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="">
+                                                    <a href="/properties.html" class="icon-btn4">
+                                                        <i class="far fa-long-arrow-down"></i>
+                                                        buy now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-line mb-40 mt-40">
+                                <hr>
+                            </div>
+                            <div class="property-item">
+                                <div class="row align-items-xl-end align-items-lg-start g-5">
+                                    <div class="col-auto col-md-12 col-lg-5">
+                                        <div class="list-img mega-hover">
+                                            <img src="/assets/img/properties/2.png" alt="properties-list">
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-12 col-lg-7">
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-auto">
+                                                <h3 class="text-capitalize h5 mb-40"><a href="/properties-details.html">Homes Golden
+                                                        River</a>
+                                                </h3>
+                                            </div>
+                                            <div class="col-auto text-end">
+                                                <p class="h5 font-body fw-medium mb-0">USD $55000</p>
+                                                <span class="fs-xxs text-uppercase fw-medium">buying price</span>
+                                            </div>
+                                        </div>
+                                        <div class="propertie-meta3 mb-30">
+                                            <span><img src="/assets/img/properties/properties_meta-1-1.svg" alt="icon"> 3
+                                                Bedroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-2.svg" alt="icon"> 2
+                                                Bethroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-3.svg" alt="icon"> 235 Sq
+                                                ft</span>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h3 class="h6 text-capitalize font-title  fw-semibold mb-0">Some info</h3>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="">
+                                                    <a href="/properties.html" class="icon-btn4">
+                                                        <i class="far fa-long-arrow-down"></i>
+                                                        buy now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-line mb-40 mt-40">
+                                <hr>
+                            </div>
+                            <div class="property-item">
+                                <div class="row align-items-xl-end align-items-lg-start g-5">
+                                    <div class="col-auto col-md-12 col-lg-5">
+                                        <div class="list-img mega-hover">
+                                            <img src="/assets/img/properties/3.png" alt="properties-list">
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-12 col-lg-7">
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-auto">
+                                                <h3 class="text-capitalize h5 mb-40"><a href="/properties-details.html">Homes Golden
+                                                        River</a>
+                                                </h3>
+                                            </div>
+                                            <div class="col-auto text-end">
+                                                <p class="h5 font-body fw-medium mb-0">USD $55000</p>
+                                                <span class="fs-xxs text-uppercase fw-medium">buying price</span>
+                                            </div>
+                                        </div>
+                                        <div class="propertie-meta3 mb-30">
+                                            <span><img src="/assets/img/properties/properties_meta-1-1.svg" alt="icon"> 3
+                                                Bedroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-2.svg" alt="icon"> 2
+                                                Bethroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-3.svg" alt="icon"> 235 Sq
+                                                ft</span>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h3 class="h6 text-capitalize font-title  fw-semibold mb-0">Some info</h3>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="">
+                                                    <a href="/properties.html" class="icon-btn4">
+                                                        <i class="far fa-long-arrow-down"></i>
+                                                        buy now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-line mb-40 mt-40">
+                                <hr>
+                            </div>
+                            <div class="property-item">
+                                <div class="row align-items-xl-end align-items-lg-start g-5">
+                                    <div class="col-auto col-md-12 col-lg-5">
+                                        <div class="list-img mega-hover">
+                                            <img src="/assets/img/properties/4.png" alt="properties-list">
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-12 col-lg-7">
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-auto">
+                                                <h3 class="text-capitalize h5 mb-40"><a href="/properties-details.html">Homes Golden
+                                                        River</a>
+                                                </h3>
+                                            </div>
+                                            <div class="col-auto text-end">
+                                                <p class="h5 font-body fw-medium mb-0">USD $55000</p>
+                                                <span class="fs-xxs text-uppercase fw-medium">buying price</span>
+                                            </div>
+                                        </div>
+                                        <div class="propertie-meta3 mb-30">
+                                            <span><img src="/assets/img/properties/properties_meta-1-1.svg" alt="icon"> 3
+                                                Bedroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-2.svg" alt="icon"> 2
+                                                Bethroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-3.svg" alt="icon"> 235 Sq
+                                                ft</span>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h3 class="h6 text-capitalize font-title  fw-semibold mb-0">Some info</h3>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="">
+                                                    <a href="/properties.html" class="icon-btn4">
+                                                        <i class="far fa-long-arrow-down"></i>
+                                                        buy now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-line mb-40 mt-40">
+                                <hr>
+                            </div>
+                            <div class="property-item">
+                                <div class="row align-items-xl-end align-items-lg-start g-5">
+                                    <div class="col-auto col-md-12 col-lg-5">
+                                        <div class="list-img mega-hover">
+                                            <img src="/assets/img/properties/5.png" alt="properties-list">
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-12 col-lg-7">
+                                        <div class="row align-items-center justify-content-between">
+                                            <div class="col-auto">
+                                                <h3 class="text-capitalize h5 mb-40"><a href="/properties-details.html">Homes Golden
+                                                        River</a>
+                                                </h3>
+                                            </div>
+                                            <div class="col-auto text-end">
+                                                <p class="h5 font-body fw-medium mb-0">USD $55000</p>
+                                                <span class="fs-xxs text-uppercase fw-medium">buying price</span>
+                                            </div>
+                                        </div>
+                                        <div class="propertie-meta3 mb-30">
+                                            <span><img src="/assets/img/properties/properties_meta-1-1.svg" alt="icon"> 3
+                                                Bedroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-2.svg" alt="icon"> 2
+                                                Bethroom</span>
+                                            <span><img src="/assets/img/properties/properties_meta-1-3.svg" alt="icon"> 235 Sq
+                                                ft</span>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h3 class="h6 text-capitalize font-title  fw-semibold mb-0">Some info</h3>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="list-style3 mt-3">
+                                                            <ul>
+                                                                <li><i class="fas fa-star"></i> Living Space</li>
+                                                                <li><i class="fas fa-star"></i> Kid Playground Space</li>
+                                                                <li><i class="fas fa-star"></i> 24 Hour Concierge</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="">
+                                                    <a href="/properties.html" class="icon-btn4">
+                                                        <i class="far fa-long-arrow-down"></i>
+                                                        buy now
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-line mb-40 mt-40">
+                                <hr>
+                            </div>
+                            <!-- pagina 2 -->
+                            <!-- Repita o bloco acima para as outras propriedades, mudando os detalhes conforme necessário -->
+                            <!-- Propriedade 2 -->
+                            <!-- Propriedade 3 -->
+                            <!-- Propriedade 4 -->
+                            <!-- Propriedade 5 -->
+                        </div>
+                        <div class="pagination-controls">
+                            <button id="prev-page" class="btn  me-2">Anterior</button>
+                            <span id="page-info"></span>
+                            <button id="next-page" class="btn btn">Próxima</button>
+                        </div>
+                    </div>
+                </section>
+                <!--==============================
+                Subscribe Area
+                ==============================-->
+                <section class="bg-secondary space-extra">
+                    <div class="container">
+                        <div class="row gx-0 align-items-center justify-content-between">
+                            <div class="col-xl-auto">
+                                <h2 class="sec-title4 h1">Subscribe to newsletter.</h2>
+                                <p class="sec-text mb-0">our properties for sale</p>
+                            </div>
+                            <div class="col-xl-auto">
+                                <form action="mail.php" class="form-style2 ajax-contact" mathod="POST">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter your email address....">
+                                        <button class="vs-btn">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--==============================
+            Footer Area
+            ==============================-->
+                <footer class="footer-wrapper overflow-hidden footer-layout1" data-bg-src="assets/img/bg/footer-bg.jpg">
+                    <div class="widget-area">
+                        <div class="vs-container1">
+                            <div class="row gx-60 justify-content-between align-items-center">
+                                <div class="col">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-6 col-lg-auto">
+                                            <div class="widget">
+                                                <div class="footer-logo">
+                                                    <img src="/assets/img/footer/footer-1-1.png" alt="footer">
+                                                </div>
+                                                <div class="vs-widget-about">
+                                                    <p class="footer-address3"><i class="far fa-map-marker-alt"></i> Santa rita do
+                                                        passa quatro, centro
+                                                        , 13670-000 , São Paulo</p>
+                                                    <p class="footer-address3"><a class="text-inherit" href="tel:++11234562228"><i
+                                                                class="far fa-phone-alt"></i>19 12345-6789 </a></p>
+                                                    <p class="footer-address3"><a class="text-inherit"
+                                                            href="mailto:info@example.com"><i class="far fa-envelope"></i>
+                                                            info@example.com</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="section-line text-border d-none d-xl-block">
+                                                <hr>
+                                            </div>
+                                            <div class="widget">
+                                                <h3 class="widget_title mb-2">Horário de funcionamento</h3>
+                                                <p class="footer-time3">Segunda a Sexta : <span class="time text-secondary">08:00 -
+                                                        17:00</span>
+                                                <p>Sábado: <span class="time text-secondary"> 08:00 - 12:00</span></p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="widget  footer-widget3">
+                                                <h3 class="widget_title">Links Importantes</h3>
+                                                <div class="menu-all-pages-container">
+                                                    <ul class="menu">
+                                                        <li><a href="/index.html">Inicio</a></li>
+                                                        <li><a href="/about.html">Sobre nós</a></li>
+                                                        <li><a href="/contact.html">contato</a></li>
+                                                        <li><a href="/properties.html">propriedades</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-auto col-12">
+                                    <form action="mail.php" class="form-style5 ajax-contact" method="POST">
+                                        <h3 class="mb-0 form-title text-white text-uppercase">Contato</h3>
+                                        <div class="row gx-20">
+                                            <div class="col-md-12 form-group">
+                                                <input type="text" placeholder="Seu Nome *">
+                                            </div>
+                                            <div class="col-md-12 form-group">
+                                                <input type="email" placeholder="Seu E-mail *">
+                                            </div>
+                                            <div class="col-md-12 form-group mb-0">
+                                                <textarea placeholder="Mensagem"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="vs-btn">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-wrap">
+                        <div class="vs-container1">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="text-center col-lg-auto">
+                                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 Todos os direitos
+                                        reservados. Desenvolvido por <a href="https://www.instagram.com/andersondcamilo/"
+                                            class="text-white">Anderson camilo</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+            
+                <script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+                <script src="/assets/js/bootstrap.min.js"></script>
+                <script src="/assets/js/slick.min.js"></script>
+                <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+                <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+                <script src="/assets/js/isotope.pkgd.min.js"></script>
+                <script src="/assets/js/main.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+            
+            </html>
+            <div class="breadcumb-content">
+                <div>
+                    <img src="/assets/img/breadcrumb/breadcrumb-1-2.png" alt="logo">
+                    <h1 class="breadcumb-title">Casa para Alugar</h1>
+                </div>
+                <div class="breadcumb-menu-wrap">
+                    <ul class="breadcumb-menu">
+                        <li><a href="/index.html">Início</a></li>
+                        <li><a href="/contact.html">Contate-nos</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!--==============================
     properties List Area
     ==============================-->
